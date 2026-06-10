@@ -245,7 +245,7 @@ formData.append("user_id", user.id);
     setCopied(null);
 
     try {
-      const response = await fetch("http://127.0.0.1:8000/analyser", {
+      const response = await fetch("https://vintedai-luo0.onrender.com/analyser", {
         method: "POST",
         body: formData,
       });
@@ -336,7 +336,7 @@ async function payerRechargeFictive() {
   }
 
   const response = await fetch(
-    "http://127.0.0.1:8000/create-checkout-session",
+    "https://vintedai-luo0.onrender.com/create-checkout-session",
     {
       method: "POST",
       headers: {
