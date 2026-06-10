@@ -30,19 +30,21 @@ async function detecterPhotoNoire(file: File): Promise<boolean> {
 
       ctx.drawImage(img, 0, 0, 200, 200);
 
-      function moyenneZone(x1: number, y1: number, x2: number, y2: number) {
-        const data = ctx.getImageData(x1, y1, x2 - x1, y2 - y1).data;
-        let total = 0;
-        let count = 0;
+     function moyenneZone(x1: number, y1: number, x2: number, y2: number) {
+       if (!ctx) return 255;
 
-        for (let i = 0; i < data.length; i += 4) {
-          const gris = (data[i] + data[i + 1] + data[i + 2]) / 3;
-          total += gris;
-          count++;
-        }
+       const data = ctx.getImageData(x1, y1, x2 - x1, y2 - y1).data;
+       let total = 0;
+       let count = 0;
 
-        return total / count;
-      }
+    for (let i = 0; i < data.length; i += 4) {
+    const gris = (data[i] + data[i + 1] + data[i + 2]) / 3;
+    total += gris;
+    count++;
+  }
+
+  return total / count;
+}
 
       const zones = [
         moyenneZone(0, 0, 50, 50),
