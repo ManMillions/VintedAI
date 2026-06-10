@@ -361,8 +361,8 @@ async def create_checkout_session(data: dict):
                 "user_id": user_id,
                 "amount": str(amount),
             },
-            success_url="http://localhost:3000?payment=success",
-            cancel_url="http://localhost:3000?payment=cancel",
+            success_url="https://vinted-ai-self.vercel.app?payment=success",
+            cancel_url="https://vinted-ai-self.vercel.app?payment=cancel",
         )
 
         return {"url": session.url}
