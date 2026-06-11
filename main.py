@@ -285,9 +285,9 @@ async def analyser(user_id: str = Form(...), files: List[UploadFile] = File(...)
         if profile.data and len(profile.data) > 0:
             balance = float(profile.data[0]["balance"])
         else:
-             return {"error": "Profil utilisateur introuvable. Déconnecte-toi puis reconnecte-toi."}
+            return {"error": "Profil utilisateur introuvable. Déconnecte-toi puis reconnecte-toi."}
 
-         if balance < cout_total:
+        if balance < cout_total:
             return {"error": "Solde insuffisant"}
 
         resultats = []
