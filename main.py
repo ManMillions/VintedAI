@@ -235,6 +235,8 @@ async def home():
 
 @app.post("/analyser")
 async def analyser(user_id: str = Form(...), files: List[UploadFile] = File(...)):
+    print("USER_ID RECU PAR ANALYSER =", user_id)
+
     prix_par_article = 0.05
 
     with tempfile.TemporaryDirectory() as tmp:
@@ -242,8 +244,10 @@ async def analyser(user_id: str = Form(...), files: List[UploadFile] = File(...)
 
         for file in files:
             chemin = os.path.join(tmp, file.filename)
+
             with open(chemin, "wb") as f:
                 f.write(await file.read())
+
             chemins.append(chemin)
 
         chemins.sort(key=lambda p: os.path.basename(p).lower())
@@ -281,6 +285,8 @@ async def analyser(user_id: str = Form(...), files: List[UploadFile] = File(...)
             .eq("id", user_id)
             .execute()
         )
+
+        print("PROFILE TROUVE =", profile.data)
 
         if profile.data and len(profile.data) > 0:
             balance = float(profile.data[0]["balance"])
