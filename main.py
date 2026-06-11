@@ -95,22 +95,53 @@ Analyse toutes les photos comme UN SEUL article.
 
 Objectif : créer une annonce Vinted propre, vendeuse, naturelle et honnête.
 
-Règles :
-- Lis marque, taille, matière, mesures si visibles.
-- Ne jamais inventer.
+Règles importantes :
+- Lis la marque si visible.
+- Lis la taille si visible.
+- Lis la matière/composition si visible sur l'étiquette.
+- Si tu vois 100% coton, écris 100% coton.
+- Lis les mesures si un mètre/ruban est visible.
+- Ne jamais inventer une mesure.
+- Ne jamais inventer une marque.
+- Si une information n'est pas visible, écris "Non indiqué".
+- Détecte les défauts : taches, trous, usure, bouloches, décoloration, imprimé abîmé.
 - Très bon état = aucun trou, aucune tache visible, aucune déchirure.
-- Peluches, fibres, poussières ou légère usure normale = Très bon état.
+- Les peluches, fibres, poussières ou légère usure normale restent en Très bon état.
 - Bon état = tache visible, trou, déchirure, décoloration importante ou défaut marqué.
-- Détaille toujours les imperfections.
-- Dans le titre, écris toujours "taille X" si taille visible.
+- Continue à détailler les imperfections même si l'état reste Très bon état.
+- Si tache visible, trou, déchirure, décoloration importante ou défaut marqué : Bon état.
+- Les petites traces d'usure doivent être signalées dans la description mais ne font pas forcément passer l'article en Bon état.
+- Si défaut visible, le préciser clairement dans la description.
+- Ne mets pas de crochets autour du titre.
+- N'écris pas "voir photos".
+- Fais des hashtags utiles.
+- Ne jamais écrire seulement "Pull Nike noir M".
 - Compatible vêtements, sacs, accessoires, objets, vaisselle, décoration.
-- Ne crée jamais un lot sauf si plusieurs objets sont clairement vendus ensemble.
-- Si tu n'es pas sûr, fais quand même l'annonce.
-- Ne mets pas de prix.
+- Ne crée jamais un lot sauf si plusieurs objets sont clairement vendus ensemble sur les photos.
+- Si plusieurs articles différents semblent mélangés dans le même groupe, écrire : ERREUR : plusieurs articles détectés.
+- Ne recopie jamais les consignes dans le résultat.
+
+Règles Titre:
+-Crée un titre long et optimisé SEO Vinted (80 à 100 caractères si possible).
+-Ne jamais commencer par la marque.
+-Structure recommandée : Type d'article + synonymes pertinents + marque + couleur + taille + matière si 100% coton.
+-Ajouter des synonymes utiles à la recherche (hoodie, sweat, pull ; jean, denim ; short de bain, maillot de bain ; veste, blouson, etc.).
+-Si la taille est inconnue : ne rien écrire concernant la taille.
+-Si la marque est inconnue : ne pas inventer.
+-Si la couleur est identifiable : l'ajouter.
+-Écrire "100% coton" dans le titre uniquement si c'est réellement visible ou certain.
+-Ne jamais écrire "taille non trouvée", "marque inconnue", "couleur inconnue" ou tout texte similaire.
+-Le titre doit être naturel, lisible et optimisé pour apparaître dans un maximum de recherches Vinted.
+
+
+Barème prix :
+- Ne jamais afficher de prix.
+- Ne jamais estimer de prix.
 
 Format EXACT :
 
 TITRE
+
 
 ✅ État : ...
 🏷️ Taille : ...
@@ -118,12 +149,12 @@ TITRE
 📐 Largeur environ ... cm
 🧵 Matière : ...
 🎨 Détails visuels : ...
-🖤 Couleur : ...
+🌈 Couleur : ...
 🔥 Style : ...
 
-Écris ici un vrai petit paragraphe naturel, sans recopier cette phrase.
+Petit paragraphe naturel qui décrit le vêtement et la vibe. 😊🌸
 
-🧼 Article propre et prêt à l’envoi
+🧼 Vêtement lavé et prêt à porter
 📦 Expédition rapide sous 24/48h
 🤝 Réduction possible en lot
 
