@@ -285,14 +285,9 @@ async def analyser(user_id: str = Form(...), files: List[UploadFile] = File(...)
         if profile.data and len(profile.data) > 0:
             balance = float(profile.data[0]["balance"])
         else:
-            supabase_admin.table("profiles").insert({
-                "id": user_id,
-                "balance": 0
-            }).execute()
+             return {"error": "Profil utilisateur introuvable. Déconnecte-toi puis reconnecte-toi."}
 
-            return {"error": "Profil utilisateur créé, mais solde insuffisant. Recharge ton compte."}
-
-        if balance < cout_total:
+         if balance < cout_total:
             return {"error": "Solde insuffisant"}
 
         resultats = []
